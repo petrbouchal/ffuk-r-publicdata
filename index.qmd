@@ -310,8 +310,8 @@ Rychlejší nástroje na počítání
 ## Arrow
 
 - formát skladování (parquet/CSV) + výpočetní engine (arrow)
-- balík {arrow} = fuknce v R pro ovládání arrow engine
-- výpočty se dělí mimo R s daty mimo paměť
+- balík {arrow} = funkce v R pro ovládání arrow engine
+- výpočty se dějí mimo R s daty mimo paměť
 - možnost explicitně dělit data do více souborů podle skupin
 
 ## DuckDB
