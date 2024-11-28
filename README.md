@@ -1,6 +1,6 @@
 # Kde vzít otevřená data a jak s nimi pracovat efektivně
 
-> Materiály pro workshp na FF UK 31. 10. 2024 v rámci série [Vybraná témata analýzy dat](https://sociology-fa-cu.github.io/vybranatemataanalyzy/). Záznam [na Youtube](https://www.youtube.com/watch?v=ATUrm_wjjW0).
+> Materiály pro workshop na FF UK 31. 10. 2024 v rámci série [Vybraná témata analýzy dat](https://sociology-fa-cu.github.io/vybranatemataanalyzy/). Záznam [na Youtube](https://www.youtube.com/watch?v=ATUrm_wjjW0).
 
 Tento repozitář obsahuje podklady pro workshop o veřejných datech v R:
 
