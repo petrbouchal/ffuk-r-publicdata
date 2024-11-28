@@ -13,8 +13,10 @@ options(czso.dest_dir = "data-input/czso")
 # Stáhnout a načíst data --------------------------------------------------
 
 rozp_pqt_url <- "https://github.com/petrbouchal/ffuk-r-publicdata/releases/download/data/ucjed_mist.parquet"
-download.file(rozp_pqt_url, "data-processed/ucjed_mist.parquet", mode = "wb")
+rozp_pqt_path <- "data-processed/ucjed_mist.parquet"
+download.file(rozp_pqt_url, rozp_pqt_path, mode = "wb")
 
+rozp_mist <- read_parquet(rozp_pqt_path)
 
 # Převést do arrow datasetu -----------------------------------------------
 
