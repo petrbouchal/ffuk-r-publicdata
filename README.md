@@ -16,10 +16,10 @@ Co dělají které soubory:
 - 0_setup.R: instalace potřebných balíků, stažení, načtení a přeuložení dat
 - 1_explorace.R: kód na zkoušení hledání v katalogu a načtení dat ČSÚ
 - 2_ukol.R: skript i s komentáři pro řešení ukázkového úkolu
-- 2_ukol.qmd: totéž ve formě Quarto dokumentu - [vygenerovaná verze online](https://petrbouchal.xyz/analytici-r-publicdata/2_ukol.html)
+- 2_ukol.qmd: totéž ve formě Quarto dokumentu - [vygenerovaná verze online](https://petrbouchal.xyz/ffuk-r-publicdata/2_ukol.html)
 - 3_ukol-usporne.R: úkol bez komentářů a náhledů dat
 - 4_eurostat.R: řešení úkolu k mezinárodnímu srovnání
 - 5_out-of-memory.R: možnosti, jak s daty pracovat s využitím Arrow a parquet.
 - index.qmd: zdrojový soubor slides
 
-Balíčky jsou zachyceny v `renv.lock`, ale systém renv je vypnutý. Lze zapnout pomocí `renv::activate()` a následně `renv::restore()`.
+Dependencies jsou zachyceny v `renv.lock`, ale systém renv je vypnutý. Lze zapnout pomocí `renv::activate()` a následně `renv::restore()`.
