@@ -22,4 +22,6 @@ Co dělají které soubory:
 - 5_out-of-memory.R: možnosti, jak s daty pracovat s využitím Arrow a parquet.
 - index.qmd: zdrojový soubor slides
 
+- duckplyr.R + dtrplyr.R: nepoužito nehotové, zachováno pro případné další využití
+
 Dependencies jsou zachyceny v `renv.lock`, ale systém renv je vypnutý. Lze zapnout pomocí `renv::activate()` a následně `renv::restore()`.
