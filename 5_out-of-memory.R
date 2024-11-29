@@ -25,7 +25,14 @@ toc()
 # Parquet soubor bez načtení do paměti
 
 tic()
-ds_p <- read_parquet("data-processed/ucjed_mist.parquet", as_data_frame = FALSE)
+ds_p <- read_parquet("data-processed/ucjed_mist.parquet",
+                     as_data_frame = FALSE)
+toc()
+
+tic()
+ds_p |>
+  count(vykaz_year) |>
+  collect()
 toc()
 
 # DuckDB jako prostředník do Parquet souboru
@@ -41,7 +48,7 @@ toc()
 
 tic()
 ds_m |>
-  count(vtab, kraj)
+  count(vykaz_year)
 toc()
 
 tic()
@@ -80,6 +87,13 @@ tic()
 ds_m |>
   filter(kraj == "CZ020", vtab == "000100") |>
   count(vtab, polozka, wt = budget_spending)
+toc()
+
+tic()
+ds_p |>
+  filter(kraj == "CZ020", vtab == "000100") |>
+  count(vtab, polozka, wt = budget_spending) |>
+  collect()
 toc()
 
 tic()

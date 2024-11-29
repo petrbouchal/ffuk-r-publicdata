@@ -20,6 +20,7 @@ rozp_mist <- read_parquet(rozp_pqt_path)
 
 # Převést do arrow datasetu -----------------------------------------------
 
+rozp_mist <- read_parquet("data-processed/ucjed_mist.parquet")
 arrow::write_dataset(rozp_mist,
                      path = "data-processed/rozp_mist",
                      partitioning = c("vykaz_year", "vykaz_month", "kraj", "vtab"))

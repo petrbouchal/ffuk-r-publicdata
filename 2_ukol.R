@@ -38,7 +38,7 @@ toc()
 # toc()
 
 rozp_mist |>
-  count(vykaz_year, ucjed)
+  count(vykaz_year, vykaz_month, ucjed)
 
 rozp_mist |>
   count(polozka_typ)
@@ -126,7 +126,8 @@ dta |>
   distinct(druh, seskupeni)
 
 dta |>
-  filter(trida == "Daňové příjmy", seskupeni == "Příjem z majetkových daní") |>
+  filter(trida == "Daňové příjmy",
+         seskupeni == "Příjem z majetkových daní") |>
   distinct(podseskupeni, polozka_nazev, polozka)
 
 # Ha!
