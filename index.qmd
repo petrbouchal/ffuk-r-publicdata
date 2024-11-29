@@ -313,6 +313,7 @@ Rychlejší nástroje na počítání
 - balík {arrow} = funkce v R pro ovládání arrow engine
 - výpočty se dějí mimo R s daty mimo paměť
 - možnost explicitně dělit data do více souborů podle skupin
+- balík [{purrrow}](https://github.com/petrbouchal/purrrow) na out-of-memory kompilaci dat
 
 ## DuckDB
 
@@ -333,6 +334,7 @@ Rychlejší nástroje na počítání
 - Posit Conf 2024 [přednáška Give me the Data - Colin Gillespie](https://www.youtube.com/watch?v=zrUqOxdUUwY&list=PL9HYL-VRX0oSFkdF4fJeY63eGDvgofcbn&index=7)
 - Posit Conf 2024 [workshop - Nic Crane & Steph Hazlitt](https://posit-conf-2024.github.io/arrow/)
 - [Arrow R Cookbook](https://arrow.apache.org/cookbook/r/)
+- [Jak díky {arrow} načíst mega CSV bez přetečení paměti](https://francoismichonneau.net/2022/10/import-big-csv/)
 
 # Otázky? Tipy? Nápady?
 
