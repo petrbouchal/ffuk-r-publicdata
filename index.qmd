@@ -326,6 +326,14 @@ Rychlejší nástroje na počítání
 - {collapse} / {fastverse} => {fastplyr}
 - {furrr}: paralelizace po skupinách
 
+## Zdroje
+
+- Workshop: Francois Michonneau 2024: [slides](https://docs.google.com/presentation/d/e/2PACX-1vTLPVZWcJH-1e3KxMrIx14ab8KFTGL1pw2eQJDziEI3-8cyuvUxCkFFEXhJ9-YmnvbxTD4thiRt9QQF/pub?start=false&loop=false&delayms=10000&slide=id.p) + [code](https://github.com/fmichonneau/2024-latinr-duckdb-arrow/)
+- Knížka [Scaling Up with R and Arrow](https://arrowrbook.com/) (Nic Crane, Jonathan Keane, Neal Richardson)
+- Posit Conf 2024 [přednáška Give me the Data - Colin Gillespie](https://www.youtube.com/watch?v=zrUqOxdUUwY&list=PL9HYL-VRX0oSFkdF4fJeY63eGDvgofcbn&index=7)
+- Posit Conf 2024 [workshop - Nic Crane & Steph Hazlitt](https://posit-conf-2024.github.io/arrow/)
+- [Arrow R Cookbook](https://arrow.apache.org/cookbook/r/)
+
 # Otázky? Tipy? Nápady?
 
 [petr.bouchal\@vlada.gov.cz](mailto:petr.bouchal@vlada.gov.cz){.email}

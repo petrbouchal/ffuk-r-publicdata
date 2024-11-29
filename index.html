@@ -8,7 +8,7 @@
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.550">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Petr Bouchal, 31. říjen 2024">
   <title>Kde vzít otevřená data a jak s nimi pracovat efektivně</title>
@@ -42,7 +42,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -70,7 +70,7 @@
     code span.at { color: #657422; } /* Attribute */
     code span.bn { color: #ad0000; } /* BaseN */
     code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
     code span.ch { color: #20794d; } /* Char */
     code span.cn { color: #8f5902; } /* Constant */
     code span.co { color: #5e5e5e; } /* Comment */
@@ -84,7 +84,7 @@
     code span.fu { color: #4758ab; } /* Function */
     code span.im { color: #00769e; } /* Import */
     code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
     code span.op { color: #5e5e5e; } /* Operator */
     code span.ot { color: #003b4f; } /* Other */
     code span.pp { color: #ad0000; } /* Preprocessor */
@@ -507,24 +507,23 @@ Petr Bouchal, 31. říjen 2024
 <h1>Příklad: katalog ČSÚ</h1>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">library</span>(czso)</span>
 <span id="cb1-2"><a href=""></a><span class="fu">czso_get_catalogue</span>() <span class="sc">|&gt;</span> <span class="fu">head</span>() <span class="sc">|&gt;</span> gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div>
-<div id="prcguukfkv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#prcguukfkv table {
+<div id="yqpyjtkvrj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#yqpyjtkvrj table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#prcguukfkv thead, #prcguukfkv tbody, #prcguukfkv tfoot, #prcguukfkv tr, #prcguukfkv td, #prcguukfkv th {
+#yqpyjtkvrj thead, #yqpyjtkvrj tbody, #yqpyjtkvrj tfoot, #yqpyjtkvrj tr, #yqpyjtkvrj td, #yqpyjtkvrj th {
   border-style: none;
 }
 
-#prcguukfkv p {
+#yqpyjtkvrj p {
   margin: 0;
   padding: 0;
 }
 
-#prcguukfkv .gt_table {
+#yqpyjtkvrj .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -550,12 +549,12 @@ Petr Bouchal, 31. říjen 2024
   border-left-color: #D3D3D3;
 }
 
-#prcguukfkv .gt_caption {
+#yqpyjtkvrj .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#prcguukfkv .gt_title {
+#yqpyjtkvrj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -567,7 +566,7 @@ Petr Bouchal, 31. říjen 2024
   border-bottom-width: 0;
 }
 
-#prcguukfkv .gt_subtitle {
+#yqpyjtkvrj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -579,7 +578,7 @@ Petr Bouchal, 31. říjen 2024
   border-top-width: 0;
 }
 
-#prcguukfkv .gt_heading {
+#yqpyjtkvrj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -591,13 +590,13 @@ Petr Bouchal, 31. říjen 2024
   border-right-color: #D3D3D3;
 }
 
-#prcguukfkv .gt_bottom_border {
+#yqpyjtkvrj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#prcguukfkv .gt_col_headings {
+#yqpyjtkvrj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -612,7 +611,7 @@ Petr Bouchal, 31. říjen 2024
   border-right-color: #D3D3D3;
 }
 
-#prcguukfkv .gt_col_heading {
+#yqpyjtkvrj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -632,7 +631,7 @@ Petr Bouchal, 31. říjen 2024
   overflow-x: hidden;
 }
 
-#prcguukfkv .gt_column_spanner_outer {
+#yqpyjtkvrj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -644,15 +643,15 @@ Petr Bouchal, 31. říjen 2024
   padding-right: 4px;
 }
 
-#prcguukfkv .gt_column_spanner_outer:first-child {
+#yqpyjtkvrj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#prcguukfkv .gt_column_spanner_outer:last-child {
+#yqpyjtkvrj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#prcguukfkv .gt_column_spanner {
+#yqpyjtkvrj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -664,11 +663,11 @@ Petr Bouchal, 31. říjen 2024
   width: 100%;
 }
 
-#prcguukfkv .gt_spanner_row {
+#yqpyjtkvrj .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#prcguukfkv .gt_group_heading {
+#yqpyjtkvrj .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -694,7 +693,7 @@ Petr Bouchal, 31. říjen 2024
   text-align: left;
 }
 
-#prcguukfkv .gt_empty_group_heading {
+#yqpyjtkvrj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -709,15 +708,15 @@ Petr Bouchal, 31. říjen 2024
   vertical-align: middle;
 }
 
-#prcguukfkv .gt_from_md > :first-child {
+#yqpyjtkvrj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#prcguukfkv .gt_from_md > :last-child {
+#yqpyjtkvrj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#prcguukfkv .gt_row {
+#yqpyjtkvrj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -736,7 +735,7 @@ Petr Bouchal, 31. říjen 2024
   overflow-x: hidden;
 }
 
-#prcguukfkv .gt_stub {
+#yqpyjtkvrj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -749,7 +748,7 @@ Petr Bouchal, 31. říjen 2024
   padding-right: 5px;
 }
 
-#prcguukfkv .gt_stub_row_group {
+#yqpyjtkvrj .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -763,15 +762,15 @@ Petr Bouchal, 31. říjen 2024
   vertical-align: top;
 }
 
-#prcguukfkv .gt_row_group_first td {
+#yqpyjtkvrj .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#prcguukfkv .gt_row_group_first th {
+#yqpyjtkvrj .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#prcguukfkv .gt_summary_row {
+#yqpyjtkvrj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -781,16 +780,16 @@ Petr Bouchal, 31. říjen 2024
   padding-right: 5px;
 }
 
-#prcguukfkv .gt_first_summary_row {
+#yqpyjtkvrj .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#prcguukfkv .gt_first_summary_row.thick {
+#yqpyjtkvrj .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#prcguukfkv .gt_last_summary_row {
+#yqpyjtkvrj .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -800,7 +799,7 @@ Petr Bouchal, 31. říjen 2024
   border-bottom-color: #D3D3D3;
 }
 
-#prcguukfkv .gt_grand_summary_row {
+#yqpyjtkvrj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -810,7 +809,7 @@ Petr Bouchal, 31. říjen 2024
   padding-right: 5px;
 }
 
-#prcguukfkv .gt_first_grand_summary_row {
+#yqpyjtkvrj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -820,7 +819,7 @@ Petr Bouchal, 31. říjen 2024
   border-top-color: #D3D3D3;
 }
 
-#prcguukfkv .gt_last_grand_summary_row_top {
+#yqpyjtkvrj .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -830,11 +829,11 @@ Petr Bouchal, 31. říjen 2024
   border-bottom-color: #D3D3D3;
 }
 
-#prcguukfkv .gt_striped {
+#yqpyjtkvrj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#prcguukfkv .gt_table_body {
+#yqpyjtkvrj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -843,7 +842,7 @@ Petr Bouchal, 31. říjen 2024
   border-bottom-color: #D3D3D3;
 }
 
-#prcguukfkv .gt_footnotes {
+#yqpyjtkvrj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -857,7 +856,7 @@ Petr Bouchal, 31. říjen 2024
   border-right-color: #D3D3D3;
 }
 
-#prcguukfkv .gt_footnote {
+#yqpyjtkvrj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -866,7 +865,7 @@ Petr Bouchal, 31. říjen 2024
   padding-right: 5px;
 }
 
-#prcguukfkv .gt_sourcenotes {
+#yqpyjtkvrj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -880,7 +879,7 @@ Petr Bouchal, 31. říjen 2024
   border-right-color: #D3D3D3;
 }
 
-#prcguukfkv .gt_sourcenote {
+#yqpyjtkvrj .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -888,77 +887,77 @@ Petr Bouchal, 31. říjen 2024
   padding-right: 5px;
 }
 
-#prcguukfkv .gt_left {
+#yqpyjtkvrj .gt_left {
   text-align: left;
 }
 
-#prcguukfkv .gt_center {
+#yqpyjtkvrj .gt_center {
   text-align: center;
 }
 
-#prcguukfkv .gt_right {
+#yqpyjtkvrj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#prcguukfkv .gt_font_normal {
+#yqpyjtkvrj .gt_font_normal {
   font-weight: normal;
 }
 
-#prcguukfkv .gt_font_bold {
+#yqpyjtkvrj .gt_font_bold {
   font-weight: bold;
 }
 
-#prcguukfkv .gt_font_italic {
+#yqpyjtkvrj .gt_font_italic {
   font-style: italic;
 }
 
-#prcguukfkv .gt_super {
+#yqpyjtkvrj .gt_super {
   font-size: 65%;
 }
 
-#prcguukfkv .gt_footnote_marks {
+#yqpyjtkvrj .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#prcguukfkv .gt_asterisk {
+#yqpyjtkvrj .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#prcguukfkv .gt_indent_1 {
+#yqpyjtkvrj .gt_indent_1 {
   text-indent: 5px;
 }
 
-#prcguukfkv .gt_indent_2 {
+#yqpyjtkvrj .gt_indent_2 {
   text-indent: 10px;
 }
 
-#prcguukfkv .gt_indent_3 {
+#yqpyjtkvrj .gt_indent_3 {
   text-indent: 15px;
 }
 
-#prcguukfkv .gt_indent_4 {
+#yqpyjtkvrj .gt_indent_4 {
   text-indent: 20px;
 }
 
-#prcguukfkv .gt_indent_5 {
+#yqpyjtkvrj .gt_indent_5 {
   text-indent: 25px;
 }
 
-#prcguukfkv .katex-display {
+#yqpyjtkvrj .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#prcguukfkv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#yqpyjtkvrj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
 <tr class="header gt_col_headings">
 <th id="dataset_iri" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">dataset_iri</th>
@@ -1064,31 +1063,29 @@ Petr Bouchal, 31. říjen 2024
 </table>
 
 </div>
-</div>
 </section>
 <section id="přehledněji" class="title-slide slide level2 center">
 <h2>Přehledněji</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a><span class="fu">czso_get_catalogue</span>() <span class="sc">|&gt;</span> <span class="fu">head</span>() <span class="sc">|&gt;</span> <span class="fu">select</span>(title, dataset_id) <span class="sc">|&gt;</span> <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div>
-<div id="pnxqnazrss" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#pnxqnazrss table {
+<div id="iqxqcpdaum" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#iqxqcpdaum table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#pnxqnazrss thead, #pnxqnazrss tbody, #pnxqnazrss tfoot, #pnxqnazrss tr, #pnxqnazrss td, #pnxqnazrss th {
+#iqxqcpdaum thead, #iqxqcpdaum tbody, #iqxqcpdaum tfoot, #iqxqcpdaum tr, #iqxqcpdaum td, #iqxqcpdaum th {
   border-style: none;
 }
 
-#pnxqnazrss p {
+#iqxqcpdaum p {
   margin: 0;
   padding: 0;
 }
 
-#pnxqnazrss .gt_table {
+#iqxqcpdaum .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1114,12 +1111,12 @@ Petr Bouchal, 31. říjen 2024
   border-left-color: #D3D3D3;
 }
 
-#pnxqnazrss .gt_caption {
+#iqxqcpdaum .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#pnxqnazrss .gt_title {
+#iqxqcpdaum .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1131,7 +1128,7 @@ Petr Bouchal, 31. říjen 2024
   border-bottom-width: 0;
 }
 
-#pnxqnazrss .gt_subtitle {
+#iqxqcpdaum .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1143,7 +1140,7 @@ Petr Bouchal, 31. říjen 2024
   border-top-width: 0;
 }
 
-#pnxqnazrss .gt_heading {
+#iqxqcpdaum .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1155,13 +1152,13 @@ Petr Bouchal, 31. říjen 2024
   border-right-color: #D3D3D3;
 }
 
-#pnxqnazrss .gt_bottom_border {
+#iqxqcpdaum .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#pnxqnazrss .gt_col_headings {
+#iqxqcpdaum .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1176,7 +1173,7 @@ Petr Bouchal, 31. říjen 2024
   border-right-color: #D3D3D3;
 }
 
-#pnxqnazrss .gt_col_heading {
+#iqxqcpdaum .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1196,7 +1193,7 @@ Petr Bouchal, 31. říjen 2024
   overflow-x: hidden;
 }
 
-#pnxqnazrss .gt_column_spanner_outer {
+#iqxqcpdaum .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1208,15 +1205,15 @@ Petr Bouchal, 31. říjen 2024
   padding-right: 4px;
 }
 
-#pnxqnazrss .gt_column_spanner_outer:first-child {
+#iqxqcpdaum .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#pnxqnazrss .gt_column_spanner_outer:last-child {
+#iqxqcpdaum .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#pnxqnazrss .gt_column_spanner {
+#iqxqcpdaum .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1228,11 +1225,11 @@ Petr Bouchal, 31. říjen 2024
   width: 100%;
 }
 
-#pnxqnazrss .gt_spanner_row {
+#iqxqcpdaum .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#pnxqnazrss .gt_group_heading {
+#iqxqcpdaum .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1258,7 +1255,7 @@ Petr Bouchal, 31. říjen 2024
   text-align: left;
 }
 
-#pnxqnazrss .gt_empty_group_heading {
+#iqxqcpdaum .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1273,15 +1270,15 @@ Petr Bouchal, 31. říjen 2024
   vertical-align: middle;
 }
 
-#pnxqnazrss .gt_from_md > :first-child {
+#iqxqcpdaum .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#pnxqnazrss .gt_from_md > :last-child {
+#iqxqcpdaum .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#pnxqnazrss .gt_row {
+#iqxqcpdaum .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1300,7 +1297,7 @@ Petr Bouchal, 31. říjen 2024
   overflow-x: hidden;
 }
 
-#pnxqnazrss .gt_stub {
+#iqxqcpdaum .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1313,7 +1310,7 @@ Petr Bouchal, 31. říjen 2024
   padding-right: 5px;
 }
 
-#pnxqnazrss .gt_stub_row_group {
+#iqxqcpdaum .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1327,15 +1324,15 @@ Petr Bouchal, 31. říjen 2024
   vertical-align: top;
 }
 
-#pnxqnazrss .gt_row_group_first td {
+#iqxqcpdaum .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#pnxqnazrss .gt_row_group_first th {
+#iqxqcpdaum .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#pnxqnazrss .gt_summary_row {
+#iqxqcpdaum .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1345,16 +1342,16 @@ Petr Bouchal, 31. říjen 2024
   padding-right: 5px;
 }
 
-#pnxqnazrss .gt_first_summary_row {
+#iqxqcpdaum .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#pnxqnazrss .gt_first_summary_row.thick {
+#iqxqcpdaum .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#pnxqnazrss .gt_last_summary_row {
+#iqxqcpdaum .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1364,7 +1361,7 @@ Petr Bouchal, 31. říjen 2024
   border-bottom-color: #D3D3D3;
 }
 
-#pnxqnazrss .gt_grand_summary_row {
+#iqxqcpdaum .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1374,7 +1371,7 @@ Petr Bouchal, 31. říjen 2024
   padding-right: 5px;
 }
 
-#pnxqnazrss .gt_first_grand_summary_row {
+#iqxqcpdaum .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1384,7 +1381,7 @@ Petr Bouchal, 31. říjen 2024
   border-top-color: #D3D3D3;
 }
 
-#pnxqnazrss .gt_last_grand_summary_row_top {
+#iqxqcpdaum .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1394,11 +1391,11 @@ Petr Bouchal, 31. říjen 2024
   border-bottom-color: #D3D3D3;
 }
 
-#pnxqnazrss .gt_striped {
+#iqxqcpdaum .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#pnxqnazrss .gt_table_body {
+#iqxqcpdaum .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1407,7 +1404,7 @@ Petr Bouchal, 31. říjen 2024
   border-bottom-color: #D3D3D3;
 }
 
-#pnxqnazrss .gt_footnotes {
+#iqxqcpdaum .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1421,7 +1418,7 @@ Petr Bouchal, 31. říjen 2024
   border-right-color: #D3D3D3;
 }
 
-#pnxqnazrss .gt_footnote {
+#iqxqcpdaum .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1430,7 +1427,7 @@ Petr Bouchal, 31. říjen 2024
   padding-right: 5px;
 }
 
-#pnxqnazrss .gt_sourcenotes {
+#iqxqcpdaum .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1444,7 +1441,7 @@ Petr Bouchal, 31. říjen 2024
   border-right-color: #D3D3D3;
 }
 
-#pnxqnazrss .gt_sourcenote {
+#iqxqcpdaum .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1452,77 +1449,77 @@ Petr Bouchal, 31. říjen 2024
   padding-right: 5px;
 }
 
-#pnxqnazrss .gt_left {
+#iqxqcpdaum .gt_left {
   text-align: left;
 }
 
-#pnxqnazrss .gt_center {
+#iqxqcpdaum .gt_center {
   text-align: center;
 }
 
-#pnxqnazrss .gt_right {
+#iqxqcpdaum .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#pnxqnazrss .gt_font_normal {
+#iqxqcpdaum .gt_font_normal {
   font-weight: normal;
 }
 
-#pnxqnazrss .gt_font_bold {
+#iqxqcpdaum .gt_font_bold {
   font-weight: bold;
 }
 
-#pnxqnazrss .gt_font_italic {
+#iqxqcpdaum .gt_font_italic {
   font-style: italic;
 }
 
-#pnxqnazrss .gt_super {
+#iqxqcpdaum .gt_super {
   font-size: 65%;
 }
 
-#pnxqnazrss .gt_footnote_marks {
+#iqxqcpdaum .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#pnxqnazrss .gt_asterisk {
+#iqxqcpdaum .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#pnxqnazrss .gt_indent_1 {
+#iqxqcpdaum .gt_indent_1 {
   text-indent: 5px;
 }
 
-#pnxqnazrss .gt_indent_2 {
+#iqxqcpdaum .gt_indent_2 {
   text-indent: 10px;
 }
 
-#pnxqnazrss .gt_indent_3 {
+#iqxqcpdaum .gt_indent_3 {
   text-indent: 15px;
 }
 
-#pnxqnazrss .gt_indent_4 {
+#iqxqcpdaum .gt_indent_4 {
   text-indent: 20px;
 }
 
-#pnxqnazrss .gt_indent_5 {
+#iqxqcpdaum .gt_indent_5 {
   text-indent: 25px;
 }
 
-#pnxqnazrss .katex-display {
+#iqxqcpdaum .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#pnxqnazrss div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#iqxqcpdaum div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
 <tr class="header gt_col_headings">
 <th id="title" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">title</th>
@@ -1557,7 +1554,6 @@ Petr Bouchal, 31. říjen 2024
 </tbody>
 </table>
 
-</div>
 </div>
 </div>
 </div>
@@ -1608,21 +1604,21 @@ description "Datová sada obsahuje statistické údaje o přirozeném i mechanic
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a><span class="fu">czso_get_codelist</span>(<span class="dv">43</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6,258 × 15
-   kodjaz akrcis kodcis chodnota zkrtext text  admplod admnepo obec_ul ob_ul_cor
-   &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;    &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;    
- 1 CS     CISOB  43     500011   Želech… Žele… 2009-0… 9999-0… ano     ne       
- 2 CS     CISOB  43     500020   Petrov… Petr… 2010-0… 9999-0… ne      ne       
- 3 CS     CISOB  43     500046   Libhošť Libh… 2011-0… 9999-0… ne      ne       
- 4 CS     CISOB  43     500062   Krhová  Krho… 2013-0… 9999-0… ano     ne       
- 5 CS     CISOB  43     500071   Poličná Poli… 2013-0… 9999-0… ne      ne       
- 6 CS     CISOB  43     500101   Bražec  Braž… 2016-0… 9999-0… ne      ne       
- 7 CS     CISOB  43     500127   Doupov… Doup… 2016-0… 9999-0… ne      ne       
- 8 CS     CISOB  43     500135   Kozlov  Kozl… 2016-0… 9999-0… ne      ne       
- 9 CS     CISOB  43     500151   Lubomě… Lubo… 2016-0… 9999-0… ne      ne       
-10 CS     CISOB  43     500160   Město … Měst… 2016-0… 9999-0… ano     ne       
+   KODJAZ AKRCIS KODCIS CHODNOTA ZKRTEXT     TEXT  ADMPLOD    ADMNEPO    OBEC_UL
+   &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt; &lt;date&gt;     &lt;date&gt;     &lt;chr&gt;  
+ 1 CS     CISOB  43     500011   Želechovic… Žele… 2009-01-01 9999-09-09 ano    
+ 2 CS     CISOB  43     500020   Petrov nad… Petr… 2010-01-01 9999-09-09 ne     
+ 3 CS     CISOB  43     500046   Libhošť     Libh… 2011-01-01 9999-09-09 ne     
+ 4 CS     CISOB  43     500062   Krhová      Krho… 2013-01-01 9999-09-09 ano    
+ 5 CS     CISOB  43     500071   Poličná     Poli… 2013-01-01 9999-09-09 ne     
+ 6 CS     CISOB  43     500101   Bražec      Braž… 2016-01-01 9999-09-09 ne     
+ 7 CS     CISOB  43     500127   Doupovské … Doup… 2016-01-01 9999-09-09 ne     
+ 8 CS     CISOB  43     500135   Kozlov      Kozl… 2016-01-01 9999-09-09 ne     
+ 9 CS     CISOB  43     500151   Luboměř po… Lubo… 2016-01-01 9999-09-09 ne     
+10 CS     CISOB  43     500160   Město Liba… Měst… 2016-01-01 9999-09-09 ano    
 # ℹ 6,248 more rows
-# ℹ 5 more variables: sm_rozsah &lt;chr&gt;, sm_typ &lt;chr&gt;, kodobce_h &lt;chr&gt;,
-#   domin_cobc &lt;chr&gt;, porcobec_o &lt;chr&gt;</code></pre>
+# ℹ 6 more variables: OB_UL_COR &lt;chr&gt;, SM_ROZSAH &lt;chr&gt;, SM_TYP &lt;chr&gt;,
+#   KODOBCE_H &lt;chr&gt;, DOMIN_COBC &lt;chr&gt;, PORCOBEC_O &lt;chr&gt;</code></pre>
 </div>
 </div>
 </section>
@@ -1934,6 +1930,17 @@ description "Datová sada obsahuje statistické údaje o přirozeném i mechanic
 <li>{furrr}: paralelizace po skupinách</li>
 </ul>
 </section>
+
+<section id="zdroje" class="title-slide slide level2 center">
+<h2>Zdroje</h2>
+<ul>
+<li>Workshop: Francois Michonneau 2024: <a href="https://docs.google.com/presentation/d/e/2PACX-1vTLPVZWcJH-1e3KxMrIx14ab8KFTGL1pw2eQJDziEI3-8cyuvUxCkFFEXhJ9-YmnvbxTD4thiRt9QQF/pub?start=false&amp;loop=false&amp;delayms=10000&amp;slide=id.p">slides</a> + <a href="https://github.com/fmichonneau/2024-latinr-duckdb-arrow/">code</a></li>
+<li>Knížka <a href="https://arrowrbook.com/">Scaling Up with R and Arrow</a> (Nic Crane, Jonathan Keane, Neal Richardson)</li>
+<li>Posit Conf 2024 <a href="https://www.youtube.com/watch?v=zrUqOxdUUwY&amp;list=PL9HYL-VRX0oSFkdF4fJeY63eGDvgofcbn&amp;index=7">přednáška Give me the Data - Colin Gillespie</a></li>
+<li>Posit Conf 2024 <a href="https://posit-conf-2024.github.io/arrow/">workshop - Nic Crane &amp; Steph Hazlitt</a></li>
+<li><a href="https://arrow.apache.org/cookbook/r/">Arrow R Cookbook</a></li>
+</ul>
+</section>
 </section>
 <section>
 <section id="otázky-tipy-nápady" class="title-slide slide level1 center">
@@ -2209,18 +2216,7 @@ description "Datová sada obsahuje statistické údaje o přirozeném i mechanic
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -2252,7 +2248,47 @@ description "Datová sada obsahuje statistické údaje o přirozeném i mechanic
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -2289,7 +2325,11 @@ description "Datová sada obsahuje statistické údaje o přirozeném i mechanic
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
